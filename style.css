@@ -1,0 +1,179 @@
+:root {
+    /* default font size in browsers is 16px = 1em, we make
+       things easier for us and make 10px our base size.
+       We have 10/16 = 0.625 = 1rem as it is set on root element.
+       So 1rem is now 10px throughout our stylesheet.*/
+    font-size: 0.625em;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+ 
+  body{
+    background-image: url(img/bg.jpg);
+    margin: 0;
+  }
+
+
+  .game-area {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .game {
+    visibility:hidden;
+    height: 0;
+    width: 300px;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width :200px;
+    height : 400px ;
+    background-color: darkblue;
+  }
+
+  .player{
+    
+    background-image: url(img/player.png);
+  }
+
+  .coin{
+    background-image: url(img/coin.png);
+  }
+
+  .wall{
+    background-image: url(img/wall.png);
+  }
+
+  .bomb{
+    background-image: url(img/bomb.png);
+  }
+
+  .enemies{
+    background-image: url(img/enemie.png);
+  }
+
+  .grid div {
+    height: 30px;
+    width: 30px;    
+  }
+
+/*Text setting*/
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: none;
+	outline: none;
+	padding: 5px 20px;
+	border-radius: 20px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 10px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: none;
+	outline: none;
+	padding: 5px 5px;
+	border-radius: 10px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 10px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+
+
+.game_stats{
+    width:10%;
+    float:left;
+}
+
+/*
+  *{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+header {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+	
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh; 
+  background-color: #f1f1f1;
+}
+*/
