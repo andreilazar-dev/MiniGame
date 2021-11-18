@@ -19,7 +19,6 @@
 
   .game-area {
     display: inline-block;
-    text-align: center;
     margin: auto;
     width: 50%;
     padding: 10px;
@@ -66,7 +65,17 @@
     width: 30px;    
   }
 
+
+.setting{
+  text-align: right;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+} 
 /*Text setting*/
+title{
+  color: #fff;
+}
 h1 {
 	font-family: 'Dancing Script', cursive;
 	font-size: 80px;
